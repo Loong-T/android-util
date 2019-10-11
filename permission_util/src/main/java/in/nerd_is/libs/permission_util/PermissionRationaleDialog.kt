@@ -55,11 +55,6 @@ class PermissionRationaleDialog : AppCompatDialogFragment() {
         negativeListener = listener
     }
 
-    interface Callback {
-        fun onPositiveClicked()
-        fun onNegativeClicked()
-    }
-
     companion object {
 
         const val ARG_MESSAGE = "arg_message"
