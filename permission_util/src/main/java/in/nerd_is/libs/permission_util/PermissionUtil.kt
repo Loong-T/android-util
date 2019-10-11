@@ -38,7 +38,7 @@ fun Fragment.isNotGranted(permission: String) = isNotGranted(requireContext(), p
 private fun isNotGranted(context: Context, permission: String) =
     ContextCompat.checkSelfPermission(context, permission) != PackageManager.PERMISSION_GRANTED
 
-fun AppCompatActivity.checkPermission(
+fun AppCompatActivity.handlePermissionRequest(
     permission: String,
     rationalMessage: String,
     requestPermission: () -> Unit,
@@ -65,7 +65,7 @@ fun AppCompatActivity.checkPermission(
     }
 }
 
-fun Fragment.checkPermission(
+fun Fragment.handlePermissionRequest(
     permission: String,
     rationalMessage: String,
     requestPermission: () -> Unit,
