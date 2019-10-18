@@ -42,8 +42,8 @@ fun AppCompatActivity.handlePermissionRequest(
     permission: String,
     rationalMessage: String,
     requestPermission: () -> Unit,
-    permissionDenied: () -> Unit,
-    permissionGranted: () -> Unit,
+    onPermissionGranted: () -> Unit,
+    onPermissionDenied: () -> Unit,
     @StringRes positiveStrRes: Int = R.string.common_ok,
     @StringRes negativeStrRes: Int = R.string.common_cancel
 ) {
@@ -54,14 +54,14 @@ fun AppCompatActivity.handlePermissionRequest(
                 positiveStrRes,
                 negativeStrRes,
                 requestPermission,
-                permissionDenied
+                onPermissionDenied
             )
             dialog.showNow(supportFragmentManager, null)
         } else {
             requestPermission()
         }
     } else {
-        permissionGranted()
+        onPermissionGranted()
     }
 }
 
@@ -69,8 +69,8 @@ fun Fragment.handlePermissionRequest(
     permission: String,
     rationalMessage: String,
     requestPermission: () -> Unit,
-    permissionDenied: () -> Unit,
-    permissionGranted: () -> Unit,
+    onPermissionGranted: () -> Unit,
+    onPermissionDenied: () -> Unit,
     @StringRes positiveStrRes: Int = R.string.common_ok,
     @StringRes negativeStrRes: Int = R.string.common_cancel
 ) {
@@ -81,14 +81,14 @@ fun Fragment.handlePermissionRequest(
                 positiveStrRes,
                 negativeStrRes,
                 requestPermission,
-                permissionDenied
+                onPermissionDenied
             )
             dialog.showNow(fragmentManager!!, null)
         } else {
             requestPermission()
         }
     } else {
-        permissionGranted()
+        onPermissionGranted()
     }
 }
 
