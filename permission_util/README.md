@@ -28,9 +28,9 @@ handlePermissionRequest(
 )
 ```
 
-*Remember* to override `onRequestPermissionsResult` method to handle permission result.
+**Remember** to override `onRequestPermissionsResult` method to handle permission result.
 
-*记得*重写 `onRequestPermissionsResult` 方法来处理权限请求结果。
+**记得**重写 `onRequestPermissionsResult` 方法来处理权限请求结果。
 
 ```kotlin
 override fun onRequestPermissionsResult(

@@ -23,7 +23,7 @@ Then add libs which are needed.
 implementation 'in.nerd-is:lib-name:-lib-version'
 ```
 
-## Permission Util
+## [Permission Util](https://github.com/Loong-T/android-util/tree/master/permission_util)
 Helper for handling request single permission.
 
 处理请求单个权限的帮助方法。
