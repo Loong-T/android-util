@@ -1,5 +1,4 @@
 <resources>
-  <string name="app_name">PermissionUtil</string>
   <string name="common_ok">OK</string>
   <string name="common_cancel">Cancel</string>
 </resources>
