@@ -1,2 +1,2 @@
-include ':app', ':permission_util'
+include ':app', ':permission_util', ':placeholder'
 rootProject.name='Android Util'
