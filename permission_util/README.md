@@ -1,4 +1,7 @@
 # Permission Util
+
+![](https://jitpack.io/v/Loong-T/android-util.svg?style=flat-square)
+
 Helper for handling request single permission.
 
 处理请求单个权限的帮助方法。
@@ -6,7 +9,7 @@ Helper for handling request single permission.
 ## Usage
 
 ```groovy
-implementation 'in.nerd-is:android-util:1.0.0'
+implementation "in.nerd-is.android-util:permission-util:$version"
 ```
 
 ```kotlin
