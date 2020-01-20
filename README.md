@@ -23,7 +23,7 @@ allprojects {
 Then add libs which are needed.
 
 ```groovy
-implementation 'in.nerd-is:lib-name:-lib-version'
+implementation 'in.nerd-is.android-util:lib-name:-lib-version'
 ```
 
 ## [Permission Util](https://github.com/Loong-T/android-util/tree/master/permission_util)
